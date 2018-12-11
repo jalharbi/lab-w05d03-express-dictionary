@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>All Terms</title>
+
+  <div class="links">
+      <a href="/">Terms Home</a>
+      <a href="/terms/new">Create a New Term</a>
+    </div>
+    <div class="termlist">
+      {{#term}}
+      <a href="/terms/{{id}}">
+        <h3>{{name}}</h3>
+      </a>
+       <h4>{{definition}}</h4>
+      
+      {{/term}}
+    </div>
 </head>
 <body>
   
